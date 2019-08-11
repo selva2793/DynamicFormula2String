@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_generalformula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Sample formula = aformulabformulascoreformula(a+b)formula(score)"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/f1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter value of a"
+        android:layout_below="@+id/tv_generalformula"
+        />
+    <EditText
+        android:id="@+id/f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter value of b"
+        android:layout_below="@+id/f1"/>
+    <EditText
+        android:id="@+id/f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter splitter text"
+        android:layout_below="@+id/f2"/>
+
+    <EditText
+        android:id="@+id/f4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter custom formula"
+        android:layout_below="@+id/f3"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/f4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="@android:color/holo_purple"
+        android:background="@android:color/holo_green_light"
+        android:text="calculate"
+        />
+    <TextView
+        android:id="@+id/tv_empty"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+
+        android:layout_below="@+id/btn"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_below="@+id/tv_empty"/>
+
+
+</RelativeLayout>
